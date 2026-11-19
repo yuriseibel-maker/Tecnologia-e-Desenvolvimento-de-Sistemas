@@ -1,0 +1,154 @@
+
+/* Configurações gerais */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f4f6fa;
+    color: #263238;
+    line-height: 1.6;
+}
+
+/* Cabeçalho */
+header {
+    background: linear-gradient(135deg, #101f45, #1769aa);
+    color: white;
+    text-align: center;
+    padding: 50px 20px;
+}
+
+header h1 {
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 17px;
+}
+
+/* Menu de navegação */
+nav {
+    background-color: #0d1833;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    padding: 15px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #4fc3f7;
+}
+
+/* Seção de destaque */
+.destaque {
+    background-color: #dceeff;
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.destaque h2 {
+    color: #124b80;
+    font-size: 28px;
+    margin-bottom: 15px;
+}
+
+/* Conteúdo principal */
+.conteudo {
+    max-width: 1100px;
+    margin: auto;
+    padding: 45px 20px;
+}
+
+.conteudo h2 {
+    color: #124b80;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.conteudo p {
+    margin-bottom: 15px;
+    text-align: justify;
+}
+
+/* Cards de tecnologias */
+.cards {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.card {
+    background-color: white;
+    flex: 1 1 250px;
+    padding: 25px;
+    border-radius: 10px;
+    border-left: 5px solid #1684c7;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card h3 {
+    color: #1684c7;
+    margin-bottom: 12px;
+}
+
+/* Rodapé */
+footer {
+    background-color: #0d1833;
+    color: white;
+    text-align: center;
+    padding: 30px 20px;
+}
+
+footer h2 {
+    margin-bottom: 15px;
+}
+
+footer p {
+    margin: 8px 0;
+}
+
+/* Responsividade para celulares */
+@media (max-width: 600px) {
+
+    header h1 {
+        font-size: 23px;
+    }
+
+    nav {
+        gap: 15px;
+    }
+
+    .destaque h2 {
+        font-size: 23px;
+    }
+
+    .conteudo {
+        padding: 30px 15px;
+    }
+
+    .cards {
+        flex-direction: column;
+    }
+}
